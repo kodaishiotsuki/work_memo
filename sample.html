@@ -320,36 +320,18 @@
         $("#change3").val(hole.change);
       }
 
-
-
-
-
-
-
-
-
       //////////////////////////メモ追加//////////////////////
-      $('#more').on("click", function(){
-        if(){
-          $('#memo2').show();
-        }else{
-          $('#memo3').show();
-        }
+      $("#more").on("click", function () {
+        var tr_form =
+          "" +
+          "<tr>" +
+          '<td><input type="date" id="date"></td>' +
+          '<td><input type="number" id="today_weight"></td>' +
+          '<td><input type="number" id="today_cal"></td>' +
+          '<td><input type="number" id="change"></td>' +
+          "</tr>";
+        $(tr_form).appendTo($("table > tbody"));
       });
-
-
-
-      // $("#more").on("click", function () {
-      //   var tr_form =
-      //     "" +
-      //     "<tr>" +
-      //     '<td><input type="date" id="date"></td>' +
-      //     '<td><input type="number" id="today_weight"></td>' +
-      //     '<td><input type="number" id="today_cal"></td>' +
-      //     '<td><input type="number" id="change"></td>' +
-      //     "</tr>";
-      //   $(tr_form).appendTo($("table > tbody"));
-      // });
     </script>
   </body>
 </html>
