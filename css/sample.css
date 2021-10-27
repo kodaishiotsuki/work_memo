@@ -1,0 +1,20 @@
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  border-top: 1px solid #000000;
+  display: table; /* 定義 */
+  table-layout: fixed;
+  width: 100%;
+}
+li {
+  list-style-type: none;
+  border: 1px solid #666;
+  background-color: #fff;
+  display: table-cell; /* 定義 */
+  cursor: pointer;
+}
